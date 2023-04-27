@@ -6,3 +6,15 @@ function navbar() {
 }
 
 window.addEventListener('scroll',navbar)
+
+
+function subir() {
+    let teste = document.getElementById("teste")
+    teste.style.height="0px"
+}
+
+function openbar() {
+    let icon = document.getElementById("navbar")
+        icon.style.backgroundColor="red"
+    
+}

@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+
+<body onload="subir()">
+    <div id="teste">
+        <p>IOT</p>
+    </div>
     <header id="navbar">
         <div>
             LOGO
         </div>
-        <ul>
-            <li>O QUE É </li>
-            <li>IMPORTANCIA</li>
-            <li>METODOLOGIA</li>
-            <li>RESULTADOS</li>
+        <ul id="navigation">
+            <li><a> QUE É</a> </li>
+            <li><a>IMPORTANCIA</a></li>
+            <li><a>METODOLOGIA</a></li>
+            <li><a>RESULTADOS</a></li>
         </ul>
+        <img src="img/bar2.png" alt="" id="sidebar" onclick="openbar()">
     </header>
     <section class="parallax" style="background-image: url(img/ABNER.jpg);">
         <h1> O QUE É </h1>

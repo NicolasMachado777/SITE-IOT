@@ -17,6 +17,7 @@ header{
     height: 50px;
     z-index: 9;
     transition: 0.5s;
+    flex-wrap: wrap;
 }
 
 header>ul{
@@ -25,15 +26,33 @@ header>ul{
 }
 header>ul>li{
     margin: 0 3px;
-    padding: 10px 10px;
-    border-radius: 10px;
-    transition: 0.3s;
+    padding: 0 5px;
     cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px; 
+    transition: color 0.3s;
 }
 header>ul>li:hover{
-    color: #1875b8;
-    background-color: white;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    color: black;
 }
+#sidebar{
+    display: none;
+}
+@media( max-width: 500px ){
+    #sidebar{
+        display: flex;
+    }
+    #navigation{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+    }
+}
+
 .parallax{
     height: 80vh;
     background-position: center;
@@ -46,6 +65,11 @@ header>ul>li:hover{
     align-items: center;
     justify-content: center;
     text-shadow: 2px 2px 2px black;
+}
+@media (max-width: 600px){
+    .parallax{
+        font-size: 25px;
+    }
 }
 section{
     
@@ -72,7 +96,20 @@ section.parallax::after{
 }
 
 
-
+#teste{
+    background-color: darkorchid;
+    color: #000;
+    z-index: 50;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1.5s;
+    overflow: hidden;
+}
 
 ::-webkit-scrollbar{
     background-color: #000000;
