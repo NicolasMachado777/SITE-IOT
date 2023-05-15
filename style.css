@@ -1,12 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #35648E;
 }
-header{
+
+#sidebar {
+    display: none;
+}
+
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -20,40 +26,58 @@ header{
     flex-wrap: wrap;
 }
 
-header>ul{
-    display: flex;
-    list-style: none;
+@media (min-width:801px) {
+    #navigation {
+        display: flex;
+        list-style: none;
+    }
+
+    #navigation>li {
+        margin: 0 3px;
+        padding: 0 5px;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 50px;
+        transition: color 0.3s;
+    }
 }
-header>ul>li{
-    margin: 0 3px;
-    padding: 0 5px;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    height: 100%;
-    line-height: 50px; 
-    transition: color 0.3s;
-}
-header>ul>li:hover{
+
+header>ul>li:hover {
     border-bottom: 2px solid rgb(0, 0, 0);
     color: black;
 }
-#sidebar{
-    display: none;
-}
-@media( max-width: 500px ){
-    #sidebar{
+
+@media(max-width: 800px) {
+    #sidebar {
         display: flex;
     }
-    #navigation{
-        display: none;
+
+    #navigation {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: space-around;
+        top: 50px;
+        background-color: transparent;
+        height: 0px;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
+        background: rgba(53, 100, 142, 0.5);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(6.5px);
+        -webkit-backdrop-filter: blur(6.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
     }
-    header{
+    header {
         justify-content: space-between;
     }
 }
 
-.parallax{
+.parallax {
     height: 80vh;
     background-position: center;
     background-size: cover;
@@ -66,15 +90,17 @@ header>ul>li:hover{
     justify-content: center;
     text-shadow: 2px 2px 2px black;
 }
-@media (max-width: 600px){
-    .parallax{
+
+@media (max-width: 600px) {
+    .parallax {
         font-size: 25px;
     }
 }
-section{
-    
+
+section {
+
     min-height: 80vh;
-    background-color: lightgrey;
+    background-color: rgb(0, 195, 255);
     text-align: justify;
     display: flex;
     align-items: center;
@@ -82,25 +108,39 @@ section{
     border-bottom: 1px solid black;
 }
 
-section.parallax::after{
+section.parallax::after {
     content: "";
     height: 80vh;
     width: 100%;
     position: absolute;
     z-index: 8;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%,#000 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
 }
 
-.corheader{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.corheader {
     background-color: #1C8ADB;
 }
 
-
-#teste{
+#teste {
     background-color: darkorchid;
     color: #000;
     z-index: 50;
-    position:absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     font-size: 50px;
@@ -111,10 +151,11 @@ section.parallax::after{
     overflow: hidden;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     background-color: #000000;
     width: 5px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: rgb(255, 255, 255);
 }

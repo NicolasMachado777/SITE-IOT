@@ -1,5 +1,5 @@
 var header = document.getElementById("navbar")
-
+var open = 0
 
 function navbar() {
     header.classList.toggle("corheader",scrollY > 0)
@@ -13,8 +13,20 @@ function subir() {
     teste.style.height="0px"
 }
 
+
 function openbar() {
-    let icon = document.getElementById("navbar")
-        icon.style.backgroundColor="red"
+   let sidebar = document.getElementById("sidebar")
+   let navigation = document.getElementById("navigation")
+
+
+   if (open == 0) {
+    navigation.style.height="200px";
+    open = 1
+    sidebar.src="img/close.svg"
+   } else {
+    navigation.style.height="0px";
+    open = 0
+    sidebar.src="img/bar2.png"
+   }     
     
 }
