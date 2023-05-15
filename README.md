@@ -24,3 +24,16 @@
 * GRAFICOS
 
 ## Quiz
+
+# LINKS
+* http://www.bigapplehotdogs.com/
+SITE DO BALÃO
+* https://www.ianloringshiver.com/
+SITE DO GRAFICO
+* https://www.pokelondon.com/
+* https://www.mixd.co.uk/work/
+SITE IMAGEM TEXTO
+* https://rallyinteractive.com/#youmap
+TESTE
+* https://www.method.digital/
+FUNDOS
