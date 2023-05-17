@@ -16,7 +16,7 @@ function subir() {
 
 function openbar() {
    let sidebar = document.getElementById("sidebar")
-   let navigation = document.getElementById("navigation")
+   let navigation = document.getElementById("navigation-cell")
 
 
    if (open == 0) {

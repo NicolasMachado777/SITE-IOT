@@ -7,6 +7,7 @@
 body {
     background-color: #35648E;
 }
+
 /* HEADER */
 #sidebar {
     display: none;
@@ -26,39 +27,51 @@ header {
     flex-wrap: wrap;
 }
 
-@media (min-width:801px) {
-    #navigation {
-        display: flex;
-        list-style: none;
-    }
-
-    #navigation>li {
-        margin: 0 3px;
-        padding: 0 5px;
-        cursor: pointer;
-        display: block;
-        width: 100%;
-        height: 100%;
-        line-height: 50px;
-        transition: color 0.3s;
-    }
+#navigation-web {
+    display: flex;
+    list-style: none;
 }
 
-header>ul>li:hover {
+#navigation-web>li {
+    margin: 0 3px;
+    padding: 0 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+}
+
+header>ul>li>a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+header>ul>li:hover a{
+    color: rgb(0, 0, 0);
+
+}
+#navigation-web>li:hover {
     border-bottom: 2px solid rgb(0, 0, 0);
-    color: black;
 }
 
+#navigation-cell{
+    display: none;
+}
 @media(max-width: 800px) {
+    #navigation-web{
+        display: none;
+    }
     #sidebar {
         display: flex;
     }
 
-    #navigation {
+    #navigation-cell {
+        list-style: none;
         display: flex;
-        flex-direction: column;
         position: absolute;
         align-items: center;
+        flex-direction: column;
         justify-content: space-around;
         top: 50px;
         background-color: transparent;
@@ -73,10 +86,14 @@ header>ul>li:hover {
         border: 1px solid rgba(255, 255, 255, 0.18);
     }
 
+    #navigation-cell>li>a{
+        padding: 15px 15px;
+    }
     header {
         justify-content: space-between;
     }
 }
+
 /*_________________________________________________________________________________________________________*/
 
 /* SECTIONS E PARALLAX */
@@ -131,9 +148,11 @@ section.parallax::after {
     }
 
 }
+
 #oque {
     position: relative;
 }
+
 /*  
 #oque>div {
     display: flex;
@@ -162,11 +181,16 @@ section.parallax::after {
 
 
 /* GRAFICOS (DAVI)*/
+
+#graficos{
+    display: flex;
+    flex-flow: row wrap;
+}
 .card {
     position: relative;
-    width: 300px;
-    height: 350px;
-    margin: 20px;
+    width: 280px;
+    height: 300px;
+    margin: 14.5px;
 }
 
 .card .face {
@@ -241,6 +265,7 @@ section.parallax::after {
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
+
 /*_________________________________________________________________________________________________________*/
 
 
@@ -273,4 +298,5 @@ section.parallax::after {
 ::-webkit-scrollbar-thumb {
     background-color: rgb(255, 255, 255);
 }
+
 /*_________________________________________________________________________________________________________*/
