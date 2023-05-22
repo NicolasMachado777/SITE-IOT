@@ -212,9 +212,9 @@ section.parallax::after {
 
 .card {
     position: relative;
-    width: 280px;
-    height: 300px;
-    margin: 14.5px;
+    width: 360px;
+    height: 400px;
+    margin: 25px;
 }
 
 .card .face {
@@ -257,7 +257,8 @@ section.parallax::after {
     color: #f3f3f3;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     box-shadow: 0 5px 10px #000;
 }
@@ -272,9 +273,8 @@ section.parallax::after {
     color: #f3f3f3;
 }
 
-.card .back h3 {
-    font-size: 30px;
-    margin-top: 20px;
+.card .back h1 {
+    font-size: 22px;
     letter-spacing: 2px;
 }
 
