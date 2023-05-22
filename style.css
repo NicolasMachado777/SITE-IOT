@@ -248,10 +248,10 @@ section.parallax::after {
     color: #f3f3f3;
 }
 
-.card .back h3 {
-    font-size: 30px;
-    margin-top: 20px;
+.card .back h1 {
+    font-size: 25px;
     letter-spacing: 2px;
+    padding: 10%;
 }
 
 .card .back p {
