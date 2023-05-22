@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;300&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
 }
 
 body {
@@ -169,8 +171,30 @@ section.parallax::after {
 
 /*_________________________________________________________________________________________________________*/
 
-/*IMPORTANCIA (?)*/
-
+/*INFLUENCIA (?)*/
+#influencia{
+    background-color: #003554;
+    color: #ffffff;
+}
+#texto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#texto p{
+    text-align: center;
+    left: 500px;
+    font-size: 20px;
+    width: 400px;
+    margin: 0 50px;
+    padding: 25px 0;
+}
+@media (max-width:1050px) {
+    #texto {
+        display: flex;
+        flex-direction: column;
+    }
+}
 /*_________________________________________________________________________________________________________*/
 
 
@@ -272,7 +296,7 @@ section.parallax::after {
 /*CLASSES JS E ELEMENTOS WEB */
 
 .corheader {
-    background-color: #1C8ADB;
+    background-color: #003554;
 }
 
 #teste {
