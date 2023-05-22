@@ -30,3 +30,23 @@ function openbar() {
    }     
     
 }
+
+function respostacerta() {
+    let resposta = document.getElementById("nicolas");
+    var respostas = document.getElementsByClassName("resposta");
+    resposta.style.backgroundColor="green";
+    for (let i = 1; i < 4; i++) {
+        respostas[i].style.backgroundColor="red";
+    }
+
+}
+
+function passarpergunta() {
+    let next = document.getElementById("next")
+    let questoes = document.getElementsByClassName("questoes")
+    for (let i = 0; i < 2; i++) {
+        questoes[i].style.display="none";
+        questoes[i+1].style.display="flex";
+        
+    }
+}
