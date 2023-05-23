@@ -34,11 +34,11 @@
     <section class="parallax" style="background-image: url(img/roubo1.jpg);">
         <h1> INTERNET DAS COISAS </h1>
     </section>
+    
     <section id="oque">
 
         <div id="texto_oque">
             <p>
-                <img src="img/iconnet.png" height="50px " width="50px">
             <h1>O QUE É</h1>
             </p>
             <p>
@@ -54,7 +54,8 @@
     </section>
 
     <section id="influencia">
-        <div id="texto_influencia">
+
+        <div id="texto_influencia" >
             <p>
                 <img id="engrenagem" src="img/engrenagem.png" alt="" srcset="" height="150px" width="150px">
                 <br>
@@ -63,7 +64,7 @@
             </p>
 
             <p>
-                <img  id="anota" src="img/anotapai.png" alt="" srcset="" height="150px" width="150px">
+                <img id="anota" src="img/anotapai.png" alt="" srcset="" height="150px" width="150px">
                 <br>
                 Para realizar a pesquisa foi utilizado um questionário quantitativo estruturado com questões
                 fechadas. O
@@ -72,7 +73,8 @@
             </p>
         </div>
     </section>
-    <section class="parallax" style="background-image: url(img/roubo3.jpg);">
+    <section class="parallax" style="background-image: linear-gradient(to top, rgba(25, 6, 26, 0.9), rgba(31, 10, 37, 0.6)),
+    url(img/roubo3.jpg);">
         <h1> METODOLOGIA </h1>
     </section>
 
@@ -119,12 +121,13 @@
 
     <section class="parallax" style="background-image: url(img/roubo4.jpg);">
         <h1> RESULTADOS </h1>
+        <div class="fundopreto"></div>
     </section>
 
     <section id="graficos">
         <div class="card">
             <div class="face front">
-                <img src="img/grafico-1.jpg" alt="">
+                <img src="img/grafico-2.jpg" alt="">
                 <h3>ABNERLINDO</h3>
             </div>
             <div class="face back">
@@ -133,7 +136,7 @@
         </div>
         <div class="card">
             <div class="face front">
-                <img src="img/davi.jpg" alt="">
+                <img src="img/grafico-1.jpg" alt="">
                 <h3>ABNERLINDO</h3>
             </div>
             <div class="face back">
@@ -142,7 +145,7 @@
         </div>
         <div class="card">
             <div class="face front">
-                <img src="img/davi.jpg" alt="">
+                <img src="img/Grafico-3.jpg" alt="">
                 <h3>ABNERLINDO</h3>
             </div>
             <div class="face back">
@@ -151,7 +154,7 @@
         </div>
         <div class="card">
             <div class="face front">
-                <img src="img/davi.jpg" alt="">
+                <img src="img/grafico-4.jpg" alt="">
                 <h3>ABNERLINDO</h3>
             </div>
             <div class="face back">
@@ -184,48 +187,68 @@
     <div class="fundopreto"></div>
 </section>
 
-<section id="quiz">
-    <div class="questoes">
-        <div id="pergunta">
-            DAVI BORGES SOARES
+    <section id="quiz">
+        <div class="questoes">
+            <div id="pergunta">
+                DAVI BORGES SOARES
+            </div>
+            <div id="respostas">
+                <button class="resposta" id="nicolas" onclick="respostacerta()">Davi</button>
+                <button class="resposta" id="matheus">Abner</button>
+                <button class="resposta" id="abner">Nicolas</button>
+                <button class="resposta" id="davi">Matheus</button>
+            </div>
+            <button id="next" onclick="passarpergunta()">Proxima pergunta</button>
         </div>
-        <div id="respostas">
-            <button class="resposta" id="nicolas" onclick="respostacerta()">Davi</button>
-            <button class="resposta" id="matheus">Abner</button>
-            <button class="resposta" id="abner">Nicolas</button>
-            <button class="resposta" id="davi">Matheus</button>
-        </div>
-        <button id="next" onclick="passarpergunta()">Proxima pergunta</button>
-    </div>
 
-    <div class="questoes">
-        <div id="pergunta">
-            NICOLAS MACHADO
+        <div class="questoes">
+            <div id="pergunta">
+                NICOLAS MACHADO
+            </div>
+            <div id="respostas">
+                <button class="resposta" id="nicolas" onclick="respostacerta()">Davi</button>
+                <button class="resposta" id="matheus">Abner</button>
+                <button class="resposta" id="abner">Nicolas</button>
+                <button class="resposta" id="davi">Matheus</button>
+            </div>
+            <button id="next" onclick="passarpergunta()">Proxima pergunta</button>
         </div>
-        <div id="respostas">
-            <button class="resposta" id="nicolas" onclick="respostacerta()">Davi</button>
-            <button class="resposta" id="matheus">Abner</button>
-            <button class="resposta" id="abner">Nicolas</button>
-            <button class="resposta" id="davi">Matheus</button>
-        </div>
-        <button id="next" onclick="passarpergunta()">Proxima pergunta</button>
-    </div>
-    <div class="questoes">
+        <div class="questoes">
 
-        <div id="pergunta">
-            QUESTAO 3
+            <div id="pergunta">
+                QUESTAO 3
+            </div>
+            <div id="respostas">
+                <button class="resposta" id="nicolas" onclick="respostacerta()">JOAO</button>
+                <button class="resposta" id="matheus">VINICIUS</button>
+                <button class="resposta" id="abner">PROCOPIO</button>
+                <button class="resposta" id="davi">LIXOOO</button>
+            </div>
+            <button id="next" onclick="passarpergunta()">Proxima pergunta</button>
         </div>
-        <div id="respostas">
-            <button class="resposta" id="nicolas" onclick="respostacerta()">JOAO</button>
-            <button class="resposta" id="matheus">VINICIUS</button>
-            <button class="resposta" id="abner">PROCOPIO</button>
-            <button class="resposta" id="davi">LIXOOO</button>
-        </div>
-        <button id="next" onclick="passarpergunta()">Proxima pergunta</button>
-    </div>
-</section>
-
+    </section>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
     <script src="js.js"></script>
+    <script src="js_mouse.js"></script>
 </body>
 
 </html>
