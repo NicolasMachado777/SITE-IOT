@@ -155,10 +155,6 @@ section.parallax::after {
     background-color: #110942;
     color: var(--branco);
 }
-#texto_oque{
-
-}
-
 /*_________________________________________________________________________________________________________*/
 
 /*INFLUENCIA (ABNER)*/
@@ -183,7 +179,7 @@ section.parallax::after {
 }
 
 #engrenagem{
-    animation: girar ease 0.5s infinite;
+    animation: girar ease 2s infinite;
 }
 #anota{
     animation: escrever ease 2s infinite;
@@ -392,8 +388,8 @@ section.parallax::after {
 }
 
 #teste {
-    background-color: #A846A0;
-    color: #000;
+    background-color: rgba(25, 6, 26, 0.6);
+    color: white;
     z-index: 50;
     position: absolute;
     width: 100%;
