@@ -183,7 +183,7 @@ section.parallax::after {
     padding: 25px 0;
 }
 
-#engrenagem {
+#engrenagem{
     animation: girar ease 0.5s infinite;
 }
 
@@ -412,8 +412,8 @@ section.parallax::after {
 }
 
 #teste {
-    background-color: #A846A0;
-    color: #000;
+    background-color: rgba(25, 6, 26, 0.6);
+    color: white;
     z-index: 50;
     position: absolute;
     width: 100%;
