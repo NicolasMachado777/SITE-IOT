@@ -26,7 +26,7 @@ function openbar() {
    } else {
     navigation.style.height="0px";
     open = 0
-    sidebar.src="img/bar2.png"
+    sidebar.src="img/icons8-menu.svg"
    }     
     
 }
