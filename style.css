@@ -7,6 +7,7 @@
     font-family: 'Exo', sans-serif;
     --azul: #003554;
     --branco: #ffffff;
+    cursor: none;
 }
 
 body {
@@ -66,8 +67,9 @@ header>ul>li:hover a {
 #navigation-cell {
     display: none;
 }
+
 @media(max-width: 1050px) {
-    #navigation-web{
+    #navigation-web {
         display: none;
     }
 
@@ -151,19 +153,18 @@ section.parallax::after {
 /*_________________________________________________________________________________________________________*/
 
 /* O QUE É (ABNER) */
-#oque{
-    background-color: #110942;
+#oque {
+    background-color: black;
     color: var(--branco);
 }
-#texto_oque{
 
-}
+#texto_oque {}
 
 /*_________________________________________________________________________________________________________*/
 
 /*INFLUENCIA (ABNER)*/
 #influencia {
-    background-color: #28184b;
+    background-color: black;
     color: var(--branco);
 }
 
@@ -182,12 +183,14 @@ section.parallax::after {
     padding: 25px 0;
 }
 
-#engrenagem{
+#engrenagem {
     animation: girar ease 0.5s infinite;
 }
-#anota{
+
+#anota {
     animation: escrever ease 2s infinite;
 }
+
 @media (max-width:1050px) {
     #texto_influencia {
         display: flex;
@@ -199,36 +202,44 @@ section.parallax::after {
     }
 }
 
-@keyframes girar{
+@keyframes girar {
 
-    25%{
+    25% {
         rotate: 90deg;
     }
-    50%{
+
+    50% {
         rotate: 180deg;
     }
-    75%{
+
+    75% {
         rotate: 270deg;
     }
-    100%{
+
+    100% {
         rotate: 360deg;
     }
 }
-@keyframes escrever{
 
-    25%{
+@keyframes escrever {
+
+    25% {
         transform: translateX(-5px);
     }
-    50%{
+
+    50% {
         transform: translateX(5px);
     }
-    75%{
+
+    75% {
         transform: translateX(-5px);
     }
-    100%{
+
+    100% {
         transform: translateX(5px);
     }
 }
+
 /*_________________________________________________________________________________________________________*/
 
 
@@ -329,11 +340,12 @@ section.parallax::after {
 
 /*quiz (?)*/
 
-#quiz{
+#quiz {
     display: flex;
     justify-content: center;
 }
-.questoes{
+
+.questoes {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -344,13 +356,16 @@ section.parallax::after {
     border: 2px solid black;
     border-radius: 50px;
 }
-.questoes:nth-child(2){
+
+.questoes:nth-child(2) {
     display: none;
 }
-.questoes:nth-child(3){
+
+.questoes:nth-child(3) {
     display: none;
 }
-#respostas{
+
+#respostas {
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -358,17 +373,20 @@ section.parallax::after {
     align-items: center;
     width: 100%;
 }
-.resposta{
+
+.resposta {
     height: 40px;
     border: none;
     background-color: #F4B393;
     width: 60%;
     transition: background-color 1s;
 }
-.resposta:hover{
+
+.resposta:hover {
     background-color: #cd977c;
 }
-#next{
+
+#next {
     position: absolute;
     bottom: 25px;
     right: 25px;
@@ -378,9 +396,11 @@ section.parallax::after {
     border-radius: 5px;
     transition: background-color 1s;
 }
-#next:hover{
+
+#next:hover {
     background-color: rgb(212, 138, 0);
 }
+
 /*_________________________________________________________________________________________________________*/
 
 
@@ -406,6 +426,19 @@ section.parallax::after {
     overflow: hidden;
 }
 
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999;
+    border: 1px solid white;
+    /* so that it stays on top of all other elements */
+}
 ::-webkit-scrollbar {
     background-color: #000000;
     width: 5px;
