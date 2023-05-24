@@ -145,15 +145,18 @@ section.parallax::after {
     text-shadow: 2px 2px 2px black;
     position: relative;
 }
-.parallax > h1{
+
+.parallax>h1 {
     z-index: 8;
 }
-.fundopreto{
+
+.fundopreto {
     background-color: #0000008d;
     position: absolute;
     height: 100%;
     width: 100%;
 }
+
 @media (max-width: 780px) {
     .parallax {
         font-size: 20px;
@@ -168,6 +171,20 @@ section.parallax::after {
     color: var(--branco);
 }
 
+#texto-oque {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#texto-oque p {
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+    margin: 0 50px;
+    padding: 25px 0;
+}
+
 /*_________________________________________________________________________________________________________*/
 
 /*INFLUENCIA (ABNER)*/
@@ -176,15 +193,14 @@ section.parallax::after {
     color: var(--branco);
 }
 
-#texto_influencia {
+#texto-influencia {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
 }
 
-#texto_influencia p {
+#texto-influencia p {
     text-align: center;
-    /* left: 500px; */
     font-size: 20px;
     width: 400px;
     margin: 0 50px;
@@ -201,12 +217,12 @@ section.parallax::after {
 
 
 @media (max-width:1050px) {
-    #texto_influencia {
+    .textos {
         display: flex;
         flex-direction: column;
     }
 
-    #texto_influencia p {
+    .textos p {
         width: auto;
     }
 }
@@ -215,12 +231,15 @@ section.parallax::after {
     25% {
         rotate: 90deg;
     }
+
     50% {
         rotate: 180deg;
     }
+
     75% {
         rotate: 270deg;
     }
+
     100% {
         rotate: 360deg;
     }
@@ -432,19 +451,28 @@ section.parallax::after {
     overflow: hidden;
 }
 
-.circle {
-    height: 24px;
-    width: 24px;
-    border-radius: 24px;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
+.cursor {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
     pointer-events: none;
-    z-index: 99999999;
-    border: 1px solid white;
-    /* so that it stays on top of all other elements */
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 9;
 }
+
+.mouse-cresce {
+    transform: scale(2);
+    opacity: 0.5;
+}
+
+/*.cont-hover {
+    background-color: black;
+}*/
 
 ::-webkit-scrollbar {
     background-color: #000000;
