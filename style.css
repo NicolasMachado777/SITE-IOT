@@ -175,6 +175,7 @@ section.parallax::after {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 #texto-oque p {
@@ -197,14 +198,22 @@ section.parallax::after {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    width: 1000px;
 }
 
 #texto-influencia p {
     text-align: center;
     font-size: 20px;
-    width: 400px;
     margin: 0 50px;
     padding: 25px 0;
+}
+
+@media (max-width:1050px) {
+    .textos {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
 }
 
 #engrenagem {
@@ -216,16 +225,6 @@ section.parallax::after {
 }
 
 
-@media (max-width:1050px) {
-    .textos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .textos p {
-        width: auto;
-    }
-}
 
 @keyframes girar {
     25% {
@@ -450,7 +449,11 @@ section.parallax::after {
     transition: 1.5s;
     overflow: hidden;
 }
-
+@media(max-width:1050px){
+    .cursor{
+        display: none;
+    }
+}
 .cursor {
     width: 30px;
     height: 30px;
