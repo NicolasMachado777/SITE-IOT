@@ -56,13 +56,9 @@ header>ul>li>a {
     transition: color 0.3s;
 }
 
-header>ul>li:hover a {
-    color: rgb(0, 0, 0);
-
-}
 
 #navigation-web>li:hover {
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid white;
 }
 
 #navigation-cell {
