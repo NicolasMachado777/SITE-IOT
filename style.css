@@ -303,9 +303,9 @@ section.parallax::after {
 
 .card {
     position: relative;
-    width: 360px;
-    height: 400px;
-    margin: 25px;
+    width: 380px;
+    height: 390px;
+    margin: 50px;
 }
 
 .card .face {
