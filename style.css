@@ -201,8 +201,8 @@ section.parallax::after {
     align-items: baseline;
     width: 1000px;
 }
+
 #texto-influencia p {
-    display: block;
     text-align: center;
     font-size: 20px;
     margin: 0 50px;
@@ -282,18 +282,38 @@ section.parallax::after {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    width: 400px;
 }
 
 #texto-metodologia p {
-    text-align: center;
+    width: 400px;
     font-size: 20px;
     margin: auto;
     padding: 25px 0;
-    margin: 0 50px;
+    letter-spacing: -1px;
+    line-height: 1.50em;
+}
+#txt{
+    text-align: right;
+}
+#prancheta{
+
+    animation: crescer ease 2s infinite;
 }
 
-
+@keyframes crescer{
+    25% {
+         transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    75%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+}
 /*_________________________________________________________________________________________________________*/
 
 
@@ -347,7 +367,7 @@ section.parallax::after {
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: var(--roxo);
+    background: #000;
     padding: 15px;
     color: #f3f3f3;
     display: flex;
@@ -461,7 +481,7 @@ section.parallax::after {
 /* FOOTER */
 footer {
     color: white;
-    background-color: var(--roxo);
+    background-color: #000;
     height: 65vh;
     font-size: 20px;
     width: 100%;
@@ -514,7 +534,7 @@ footer div h3 {
         display: none;
     }
 
-    #linha1 p{
+    #linha1 p {
         text-align: left;
         margin: 0 0 40px;
     }
@@ -539,7 +559,8 @@ footer div h3 {
 }
 
 #teste {
-    background-color: rgba(25, 6, 26, 0.6);
+    background-color: #000;
+    /* background-color: rgba(25, 6, 26, 0.6); */
     color: white;
     z-index: 50;
     position: fixed;
