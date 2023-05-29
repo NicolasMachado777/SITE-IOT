@@ -201,6 +201,7 @@ section.parallax::after {
     align-items: baseline;
     width: 1000px;
 }
+
 #texto-influencia p {
     display: block;
     text-align: center;
@@ -346,7 +347,7 @@ section.parallax::after {
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: var(--roxo);
+    background: #000;
     padding: 15px;
     color: #f3f3f3;
     display: flex;
@@ -459,7 +460,7 @@ section.parallax::after {
 /* FOOTER */
 footer {
     color: white;
-    background-color: var(--roxo);
+    background-color: #000;
     height: 65vh;
     font-size: 20px;
     width: 100%;
@@ -512,7 +513,7 @@ footer div h3 {
         display: none;
     }
 
-    #linha1 p{
+    #linha1 p {
         text-align: left;
         margin: 0 0 40px;
     }
@@ -537,7 +538,8 @@ footer div h3 {
 }
 
 #teste {
-    background-color: rgba(25, 6, 26, 0.6);
+    background-color: #000;
+    /* background-color: rgba(25, 6, 26, 0.6); */
     color: white;
     z-index: 50;
     position: fixed;
