@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Exo', sans-serif;
     --azul: #003554;
     --branco: #ffffff;
     --roxo: #28184b;
@@ -201,12 +201,14 @@ section.parallax::after {
     align-items: baseline;
     width: 1000px;
 }
-
 #texto-influencia p {
+    display: block;
     text-align: center;
     font-size: 20px;
     margin: 0 50px;
     padding: 25px 0;
+    letter-spacing: -1px;
+    line-height: 1.50em;
 }
 
 @media (max-width:1050px) {
@@ -297,6 +299,7 @@ section.parallax::after {
 /* GRAFICOS (DAVI)*/
 
 #graficos {
+    background-color: var(--roxo);
     display: flex;
     flex-flow: row wrap;
 }
@@ -343,7 +346,7 @@ section.parallax::after {
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
+    background: var(--roxo);
     padding: 15px;
     color: #f3f3f3;
     display: flex;
@@ -351,7 +354,7 @@ section.parallax::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: 0 5px 10px #000;
+    box-shadow: 0 10px 15px #000;
 }
 
 .card .back .link {
@@ -457,25 +460,72 @@ section.parallax::after {
 footer {
     color: white;
     background-color: var(--roxo);
-    height: 40vh;
+    height: 65vh;
     font-size: 20px;
     width: 100%;
 }
-.teste{
+
+.cont-footer {
+    width: 80%;
+    padding: 100px 15%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
-.footerbottom{
-    display: flex;
-    justify-content: center;
+
+footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
 }
-@media(max-width:1050px){
-    .teste{
+
+#links {
+    margin: 30px 0px 0px 80px;
+}
+
+#links a {
+    color: #efefef;
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.footerbottom {
+    text-align: center;
+}
+
+@media(max-width:1050px) {
+    footer {
+        height: auto;
         display: flex;
         flex-direction: column;
+        text-align: center;
         width: auto;
     }
+
+    .cont-footer {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    #linha1 img {
+        display: none;
+    }
+
+    #linha1 p{
+        text-align: left;
+        margin: 0 0 40px;
+    }
+
+    #links {
+        margin: 0;
+    }
+
+    .footerbottom {
+        margin: 30px 0;
+    }
 }
+
 /*_________________________________________________________________________________________________________*/
 
 
