@@ -176,16 +176,20 @@ section.parallax::after {
 }
 
 #texto-oque p {
-    text-align: center;
+    width: 400px;
     font-size: 20px;
-    width: 200px;
-    margin: 0 50px;
+    width: 300px;
+    margin: auto;
     padding: 25px 0;
+    letter-spacing: -1px;
+    line-height: 1.50em;
 }
-
-#texto-oque p:nth-child(2) {
+#txt-oque{
+    text-align: right;
+}
+/* #texto-oque p:nth-child(2) {
     align-self: self-start;
-}
+} */
 
 /*_________________________________________________________________________________________________________*/
 
@@ -210,12 +214,18 @@ section.parallax::after {
     letter-spacing: -1px;
     line-height: 1.50em;
 }
-
 @media (max-width:1050px) {
     .textos {
         display: flex;
         flex-direction: column;
         width: auto;
+        text-align: center;
+    }
+    #txt-oque{
+        text-align: center;
+    }
+    #txt-meto{
+        text-align: center;
     }
 }
 
@@ -292,7 +302,7 @@ section.parallax::after {
     letter-spacing: -1px;
     line-height: 1.50em;
 }
-#txt{
+#txt-meto{
     text-align: right;
 }
 #prancheta{
@@ -482,39 +492,17 @@ section.parallax::after {
 footer {
     color: white;
     background-color: #000;
-    height: 65vh;
+    height: 40vh;
     font-size: 20px;
     width: 100%;
-}
-
-.cont-footer {
-    width: 80%;
-    padding: 100px 15%;
     display: flex;
-    justify-content: space-around;
-}
-
-footer div h3 {
-    font-weight: 300;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-}
-
-#links {
-    margin: 30px 0px 0px 80px;
-}
-
-#links a {
-    color: #efefef;
-    display: block;
-    text-decoration: underline;
-    margin-bottom: 10px;
-}
-
-.footerbottom {
+    justify-content: center;
     text-align: center;
 }
 
+.cont-footer p {
+    margin: 40px 0;
+}
 @media(max-width:1050px) {
     footer {
         height: auto;
@@ -527,24 +515,7 @@ footer div h3 {
     .cont-footer {
         display: flex;
         flex-direction: column;
-        padding: 40px 20px;
-    }
-
-    #linha1 img {
-        display: none;
-    }
-
-    #linha1 p {
-        text-align: left;
-        margin: 0 0 40px;
-    }
-
-    #links {
-        margin: 0;
-    }
-
-    .footerbottom {
-        margin: 30px 0;
+        padding: 40px 0;
     }
 }
 
