@@ -427,6 +427,7 @@ section.parallax::after {
 }
 
 .caixa {
+    height: 500px;
     width: 500px;
     padding: 16px;
     color: white;
@@ -473,14 +474,18 @@ section.parallax::after {
     width: 30%;
 }
 .botao {
-    width: 60%;
-    height: 40px;
+    font-size: 20px;
+    width: 100%;
+    min-height: 40px;
     border: none;
     background-color: #ff9900;
     transition: background-color 1s;
     color: white;
     border-radius: 10px;
     text-shadow: 2px 2px 2px black;
+}
+.botao:hover{
+    color: #000000;
 }
 
 .hide{

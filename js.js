@@ -150,30 +150,47 @@ function terminarjogo(){
 
 const questions = [
     {
-      question: "O joao é chato?",
+      question: "O que significa IoT em inglês?",
       answers: [
-        { text: "Não", correct: false },
-        { text: "Nunca", correct: false },
-        { text: "Sim", correct: true },
-        { text: "Jamais", correct: false }
+        { text: " Internet of Technology", correct: false },
+        { text: "Internet of Things", correct: true },
+        { text: "Internet of Telecommunications", correct: false },
+        { text: "Internet of Transportation", correct: false }
       ]
     },
     {
-      question: "Mais esperto da Etec?",
+      question: "Qual a definição correta de Internet das Coisas?",
       answers: [
-        { text: "Abner", correct: true },
-        { text: "Nicolas", correct: false },
-        { text: "Davi", correct: false },
-        { text: "Matheus", correct: false }
+        { text: "Uma rede de computadores interconectados globalmente.", correct: false },
+        { text: "Um sistema de comunicação sem fio para dispositivos móveis.", correct: false },
+        { text: "Uma rede de dispositivos físicos interconectados que coletam e compartilham dados. ", correct: true }
       ]
     },
     {
-      question: 'Davi pega mulher casada?',
+      question: 'Qual tecnologia de comunicação é frequentemente utilizada na Internet das Coisas?',
       answers: [
-        { text: 'Sim', correct: true },
-        { text: 'Não', correct: false },
-        { text: 'Nunca', correct: false },
-        { text: "Jamais", correct: false }
+        { text: ' Wi-Fi', correct: false },
+        { text: 'Bluetooth', correct: false },
+        { text: 'Celular', correct: false },
+        { text: "Todas as opções acima ", correct: true }
       ]
-    }
+    },   
+     {
+        question: 'Qual é uma das principais vantagens da Internet das Coisas?',
+        answers: [
+          { text: 'Maior segurança dos dados', correct: false },
+          { text: 'Menor consumo de energia', correct: false },
+          { text: 'Melhor tomada de decisão com base em dados em tempo real', correct: true },
+          { text: "Aumento da capacidade de armazenamento de dispositivos", correct: false }
+        ]
+      },
+      {
+        question: 'Qual é um exemplo de dispositivo de segurança residencial na Internet das Coisas?',
+        answers: [
+          { text: 'Câmera de vigilância conectada', correct: true },
+          { text: 'Fechadura tradicional', correct: false },
+          { text: 'Interfone analógico', correct: false },
+          { text: "Todos os dispositivos acima", correct: false }
+        ]
+      }
   ]
