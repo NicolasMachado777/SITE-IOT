@@ -1,0 +1,10 @@
+create database sorteio
+default character set utf8
+default collate utf8_general_ci;
+
+use sorteio;
+
+create table rifa(
+id_numero int,
+nome varchar(30) not null
+);

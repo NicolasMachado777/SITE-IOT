@@ -9,6 +9,8 @@
     --branco: #ffffff;
     --roxo: #28184b;
     cursor: none;
+    scroll-behavior: smooth;
+    
 }
 
 body {
