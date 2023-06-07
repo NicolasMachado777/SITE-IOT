@@ -430,12 +430,13 @@ section.parallax::after {
 
 .caixa {
     height: 500px;
-    width: 500px;
+    width: 600px;
     padding: 16px;
     color: white;
-    border: 3px solid rgb(255, 255, 255);
-    background-color: #28184B;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #372167;
     border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
 
     display: flex;
     flex-direction: column;
@@ -480,14 +481,16 @@ section.parallax::after {
     width: 100%;
     min-height: 40px;
     border: none;
-    background-color: #ff9900;
+    background-color: #372167;
+    border: 3px solid #6e42cd;
     transition: background-color 1s;
     color: white;
     border-radius: 10px;
+    padding:2px;
     text-shadow: 2px 2px 2px black;
 }
 .botao:hover{
-    color: #000000;
+    background-color: #6e42cd;
 }
 
 .hide{
@@ -502,10 +505,12 @@ section.parallax::after {
     margin-top: 8px;
 }
 .correto{
-    background-color: green;
+    background-color:#00AD31;
+    border-color: #00AD31;
 }
 .incorreto{
-    background-color: red;
+    background-color: #AD0000;
+    border-color: #AD0000;
 }
 /*_________________________________________________________________________________________________________*/
 
@@ -602,6 +607,10 @@ footer {
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(255, 255, 255);
+}
+
+.scrollreveal{
+    visibility: hidden;
 }
 
 /*_________________________________________________________________________________________________________*/
