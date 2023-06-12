@@ -236,6 +236,11 @@ section.parallax::after {
         text-align: center;
         width: auto;
     }
+    #texto-metodologia {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
 }
 
 #engrenagem {
@@ -298,9 +303,10 @@ section.parallax::after {
 }
 
 #texto-metodologia {
-    width: 400px;
+    width: 600px;
     display: flex;
     justify-content: space-around;
+    gap: 40px;
     align-items: baseline;
 }
 

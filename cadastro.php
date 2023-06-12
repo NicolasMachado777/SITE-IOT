@@ -13,7 +13,8 @@ $lista = $nomes->Consultar();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cadastro.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/iconpran.png" type="image/x-icon">
+    <title>Lista</title>
     <style>
     </style>
 </head>
