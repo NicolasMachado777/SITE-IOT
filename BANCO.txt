@@ -5,6 +5,6 @@ default collate utf8_general_ci;
 use sorteio;
 
 create table rifa(
-id_numero int,
+id int primary key auto_increment,
 nome varchar(30) not null
 );
