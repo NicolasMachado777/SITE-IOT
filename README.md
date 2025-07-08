@@ -11,7 +11,7 @@
 <h1 align="center">Internet das Coisas & Sistema de Sorteio</h1>
 
 <p align="center">
-  <a href="https://tcciot.github.io" target="_blank">🔗 Demo do Site</a> |
+  <a href="https://tcciot.github.io" target="_blank">🔗 Link do Site</a> |
   <a href="#funcionalidades">Funcionalidades</a> |
   <a href="#tecnologias">Tecnologias</a> |
   <a href="#instalacao">Instalação</a> |
