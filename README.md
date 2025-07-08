@@ -1,40 +1,62 @@
-# CONTEÚDO
 
-## Internet das coisas
-* O termo trata de uma rede de objetos físicos interconectados. Esses objetos podem ser qualquer coisa: desde um simples sensor de temperatura até um carro conectado à Internet.
+<!-- ==================================================
+   Projeto IoT & Sistema de Sorteio
+   README.md gerado automaticamente
+================================================== -->
 
-## Influência
-* A internet das coisas (IoT) trouxe um infinidade de possibilidades e inovações que vêm transformando a forma como as pessoas interagem com o mundo ao seu redor. Junto com a ampliação do uso dessas tecnologias, também surgem questões e preocupações sobre como elas influênciam em diversos aspectos da vida, incluindo a influência nos adolescentes. 
+<p align="center">
+  <img src="img/logo.svg" alt="Logo do Projeto" width="120" />
+</p>
 
-* Por um lado, a IoT pode ser vista como uma grande aliada dos adolescentes, oferecendo recursos e ferramentas que podem auxiliá-los em diversos aspectos da vida, como em seus estudos, na comunicação com amigos e familiares, no entretenimento e até mesmo na gestão da saúde. Além disso, a IoT pode ajudar a desenvolver habilidades como a criatividade, a resolução de problemas e etc.
+<h1 align="center">Internet das Coisas & Sistema de Sorteio</h1>
 
-* No entanto, a IoT também traz consigo alguns riscos e desafios para os adolescentes. Entre eles, o vício em dispositivos eletrônicos, a falta de privacidade e segurança de dados pessoais, e até mesmo a dependência de tecnologia para realizar atividades simples do dia a dia. 
+<p align="center">
+  <a href="https://tcciot.github.io" target="_blank">🔗 Demo do Site</a> |
+  <a href="#funcionalidades">Funcionalidades</a> |
+  <a href="#tecnologias">Tecnologias</a> |
+  <a href="#instalacao">Instalação</a> |
+  <a href="#uso">Como Usar</a> |
+  <a href="#banco-de-dados">Banco de Dados</a> |
+  <a href="#estrutura">Estrutura de Pastas</a>
+</p>
 
-* Diante desse contexto, é fundamental que as pessoas recebam orientações e informações adequadas sobre o uso da IoT, de modo que possam aproveitar ao máximo os benefícios que essas tecnologias oferecem, sem deixar de lado sua segurança e bem-estar. Cabe aos pais, educadores e responsáveis incentivarem um uso consciente e responsável da tecnologia, promovendo o diálogo aberto e honesto sobre os riscos e benefícios da IoT.
+---
 
-* Em suma, a influência da internet das coisas nos adolescentes é um tema complexo e em constante evolução, que demanda atenção e cuidado por parte de todos os envolvidos. Ao garantir um uso responsável e consciente das tecnologias, podemos ajudar os jovens a explorar todo o seu potencial, ao mesmo tempo em que protegemos sua saúde e bem-estar.
+> **⚠️ Atenção:**  
+> O site está disponível em [https://tcciot.github.io](https://tcciot.github.io),  
+> porém **não** inclui a funcionalidade de sorteio, já que o GitHub Pages não suporta PHP nem conexão a banco de dados.  
 
+---
 
-## Metodologia
-* Para a construção desta pesquisa foi utilizado um método qualitativo. Através de levantamento de dados pelo Google forms: A influência da internet das coisas nos adolescentes da cidade de Diadema.
+## 📋 Descrição
 
-* Essa metodologia nos permite investigar o processo de percepção dos adolescentes de Diadema na relação da IoT e seu cotidiano.
+Este projeto apresenta um site informativo sobre **Internet das Coisas (IoT)** e um **sistema de sorteio** (rifa) em PHP/MySQL.  
+O front-end conta com design responsivo, efeitos de parallax e quiz interativo.  
+O back-end em PHP faz o cadastro e listagem de participantes no banco MySQL.
 
-## Resultados
-* GRAFICOS
+---
 
-## Quiz
+## 🚀 Funcionalidades
 
-# LINKS
-* http://www.bigapplehotdogs.com/
-SITE DO BALÃO
-* https://www.ianloringshiver.com/
-SITE DO GRAFICO
-* https://www.pokelondon.com/
-* https://www.mixd.co.uk/work/
-SITE IMAGEM TEXTO
-* https://rallyinteractive.com/#youmap
-TESTE
-* https://www.method.digital/
-FUNDOS
-* https://darkfolio.webflow.io/
+- **Seções estáticas** sobre IoT: “O Que É”, “Influência”, “Metodologia” e “Resultados”  
+- **Efeitos Parallax** e animações com ScrollReveal  
+- **Quiz interativo** de perguntas e respostas sobre IoT  
+- **Formulário de sorteio** em PHP (cadastra nome do participante)  
+- **Listagem de participantes** (página `lista.php`)
+
+---
+
+## 🛠 Tecnologias
+
+| Camada         | Tecnologia / Biblioteca      |
+|----------------|------------------------------|
+| Front‑end      | HTML5, CSS3, JavaScript      |
+| Bibliotecas    | ScrollReveal.js              |
+| Back‑end       | PHP 8, PDO                   |
+| Banco de Dados | MySQL (utf8)                 |
+| Hospedagem     | GitHub Pages (front‑end)     |
+
+---
+
+*Desenvolvido por Abner, Davi, Matheus e Nicolas*
+
