@@ -12,12 +12,9 @@
 
 <p align="center">
   <a href="https://tcciot.github.io" target="_blank">🔗 Link do Site</a> |
+   <a href="#descricao">Descrição</a> |
   <a href="#funcionalidades">Funcionalidades</a> |
   <a href="#tecnologias">Tecnologias</a> |
-  <a href="#instalacao">Instalação</a> |
-  <a href="#uso">Como Usar</a> |
-  <a href="#banco-de-dados">Banco de Dados</a> |
-  <a href="#estrutura">Estrutura de Pastas</a>
 </p>
 
 ---
